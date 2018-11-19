@@ -1,4 +1,4 @@
-# capture_tumblrVideoUrl_from_blogger
+# capture_tumblrVideoUrl_from_blogger(老司机必备)
 1.此php代码主要用于自动抓取tumblr上指定博主的视频url<br>
 2.运行前需保存博主名到当前文件夹下的‘names.txt’文档，以逗号（，）隔开<br>
 3.运行结束后会自动生成博主名对应的txt文件<br>
