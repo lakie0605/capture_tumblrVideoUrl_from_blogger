@@ -9,7 +9,7 @@ foreach ($arrName as $blogger) {
     //分解博主信息，获取名称和爬取次数
     $arrData = explode(':', str_replace(PHP_EOL, '', $blogger));
     $name = $arrData[0];
-    if ($arrData) {
+    if ($arrData[1]) {
         $num = $arrData[1] > 0 ? $arrData[1] : 10;
     } else {
         $num = 10;
