@@ -22,7 +22,9 @@ foreach ($arrName as $name) {
         //匹配700_url
         $pattern_700 = "/https:\/\/w+.[a-zA-Z]+.com\/[a-zA-Z]+\/$name\/\d+\/700/";
         preg_match_all($pattern_700, $output_700, $urlData_700);
-
+        if ($i > 2 && count($urlData_700[0]) == 0) {
+            break;
+        }
         foreach ($urlData_700[0] as $value) {
             $urls_700[] = $value;
         }
